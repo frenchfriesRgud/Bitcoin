@@ -1,0 +1,26 @@
+/* 
+Bitcoin.Anthony.Media
+
+Created by Anthony.media
+on 2020-11-21  
+ 
+                                       */
+/* ================================== */
+
+ /* DIV container */
+.svg-bg {
+    position: absolute;
+    z-index: -10;
+}
+/* SVG CONTAINER */
+.svg-element {
+    transition: 0.75s all ease-in-out;
+}
+/* G ELEMENT ROTATER */
+.svg-lines-animated {
+    transition: 0.75s all ease-in-out;
+}
+
+.svg-price-gain {
+     filter: hue-rotate(145deg) brightness(1.5);
+}
