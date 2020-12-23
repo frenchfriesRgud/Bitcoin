@@ -31,8 +31,8 @@
 
 <body>
 	<div class="svg-bg animate__animated animate__fadeIn animate__delay-1s">
-			<svg class="svg-element" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:transparent;display:block;z-index:1;position:relative"
-			 width="100vw" height="100vw" preserveAspectRatio="xMidYMid" viewBox="0 0 1920 947">
+			<svg class="svg-element" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:transparent;display:block;z-index:1;position:relative;max-width:var(--max-width)"
+			 width="100vw" height="auto" preserveAspectRatio="xMidYMid" viewBox="0 0 1920 947">
 				<g transform="">
 					<style type="text/css">
 						@keyframes ld-speed-dash {
@@ -259,36 +259,51 @@
 	<div class="price-container">
 		<span><img src="assets/img/bitcoin.svg" width="100px"></span>
         <h1 class="price gain"></h1>
+        <label>Price Change Today:</label>
+        <h2 class="change">$10</h2>
     </div>
     <div class="data-calculator">
         <div class="data-metric animate__animated animate__fadeIn">
             <div class="data-heading">Market Cap</div>
-            <div class="data-metric-stat data-market-cap">   
-                         
+            <div class="data-metric-stat data-market-cap">            
             </div>
         </div>
-        <div class="data-metric animate__animated animate__fadeIn animate__delay-1s">
-            <div class="data-heading">Preview Purchase</div>
-            <div class="data-input-result-group">
-                <div class="col">
-                    <span>$<input pattern="[0-9]*" type="number" min="1" step="any"  class="data-dollars-input input-value" value="100"></span>
+        <div class="data-metric">
+            <div class="data-heading">Today's High</div>
+            <div class="data-metric-stat data-market-high">            
+            </div>
+        </div>
+        <div class="data-metric">
+            <div class="data-heading">Today's Low</div>
+            <div class="data-metric-stat data-market-low">            
+            </div>
+        </div>
+         <div class="data-heading tools-toggle">Show Tools</div>
+        <div class="tools hide">
+            <div class="data-metric">
+                <div class="data-heading">Preview Purchase</div>
+                <div class="data-input-result-group">
+                    <div class="col">
+                        <span>$<input pattern="[0-9]*" type="number" min="1" step="any"  class="data-dollars-input input-value" value="100"></span>
+                    </div>
+                    <div class="col">
+                        <span class="data-btc-per-dollar display-result">0.0001234 BTC</span>
+                    </div>
                 </div>
-                <div class="col">
-                    <span class="data-btc-per-dollar display-result">0.0001234 BTC</span>
+            </div>
+            <div class="data-metric">
+                <div class="data-heading">BTC Portfolio</div>
+                <div class="data-input-result-group">
+                    <div class="col">
+                        <span><input type="number" inputmode="decimal" min="0" class="data-portfolio-input input-value" value="0.25"> BTC</span>
+                    </div>
+                    <div class="col">
+                        <span class="data-portfolio-dollar display-result">$10</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="data-metric animate__animated animate__fadeIn animate__delay-2s">
-            <div class="data-heading">BTC Portfolio</div>
-            <div class="data-input-result-group">
-                <div class="col">
-                    <span><input type="number" inputmode="decimal" min="0" class="data-portfolio-input input-value" value="0.25"> BTC</span>
-                </div>
-                <div class="col">
-                    <span class="data-portfolio-dollar display-result">$10</span>
-                </div>
-            </div>
-        </div>
+        
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit.min.js"></script>
 <script src="/lib/js/bitcoin.js"></script>

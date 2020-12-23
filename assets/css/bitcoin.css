@@ -1,3 +1,6 @@
+:root {
+    --max-width: 750px;
+}
 * {
     font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
 }
@@ -5,8 +8,9 @@ body {
     display:flex;
     flex-direction: column;
     background: #f7f7f7;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: var(--max-width);
 }
 input, select { font-size: 100%; }
 
@@ -38,11 +42,11 @@ input, select { font-size: 100%; }
 }
 .data-calculator {
     background: white;
-    height: 50vh;
-    border-radius: 50px;
+    height: auto;
+    border-radius: 50px 50px 0px 0px;
     padding: 15px;
     box-sizing: border-box;
-    margin: 20px;
+    margin: 0px;
     box-shadow: 0 2px 8px 0 rgba(103, 151, 255, .09), 0 4px 32px 0 rgba(103, 151, 255, .09) !important;
 }
 .data-metric {
